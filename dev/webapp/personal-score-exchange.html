@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/personal.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+
+            <section class="personal-main">
+                <div class="personal-score-exchange flex-v">
+                    <section class="personal-title">
+                        <h1>兑换列表</h1>
+
+                        <a href="javascript:void(0);" class="btn-sort">排序</a>
+                    </section>
+
+                    <div class="list flex-a-i">
+                        <ul>
+                            <li class="flex-h">
+                                <div class="title">
+                                    <h1>经典保温随手杯</h1>
+                                    <p>2016-11-10兑换</p>
+                                </div>
+                                <div class="score flex-a-i flex-v-c">
+                                    <p>200积分</p>
+                                </div>
+                                <div class="state flex-v-c">
+                                    <p>已兑换</p>
+                                </div>
+                            </li>
+                            <li class="flex-h">
+                                <div class="title">
+                                    <h1>简约陶瓷马克杯</h1>
+                                    <p>2016-11-9兑换</p>
+                                </div>
+                                <div class="score flex-a-i flex-v-c">
+                                    <p>50积分</p>
+                                </div>
+                                <div class="state flex-v-c">
+                                    <p class="sended">已发货</p>
+                                    <div class="modal-courier" style="display: none;">
+                                        <h2>- 快递单号 -</h2>
+                                        <h3>12345678910</h3>
+                                        <h4>发货时间：2016-11-30</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex-h">
+                                <div class="title">
+                                    <h1>经典保温随手杯</h1>
+                                    <p>2016-11-10兑换</p>
+                                </div>
+                                <div class="score flex-a-i flex-v-c">
+                                    <p>200积分</p>
+                                </div>
+                                <div class="state flex-v-c">
+                                    <p>已兑换</p>
+                                </div>
+                            </li>
+                            <li class="flex-h">
+                                <div class="title">
+                                    <h1>简约陶瓷马克杯</h1>
+                                    <p>2016-11-9兑换</p>
+                                </div>
+                                <div class="score flex-a-i flex-v-c">
+                                    <p>50积分</p>
+                                </div>
+                                <div class="state flex-v-c">
+                                    <p class="sended">已发货</p>
+                                    <div class="modal-courier" style="display: none;">
+                                        <h2>- 快递单号 -</h2>
+                                        <h3>12345678910</h3>
+                                        <h4>发货时间：2016-11-30</h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+            
+        </div>
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // 
+                $('.personal-title .btn-sort').on('click', function() {
+                    $(this).toggleClass('btn-sort-reverse');
+                });
+
+
+                // 点击已发货
+                $('.personal-score-exchange').bind('click', function(e) {
+                    if(e.target.className == 'sended' && e.target.nodeName == 'P') {
+                        var modalCourier = e.target.offsetParent.children[1];
+                        
+                        if(modalCourier.style.display == 'block') {
+                            return false;
+                        } else {
+                            $('.modal-courier').hide();
+                            modalCourier.style.display = 'block';
+                        }
+                    } else {
+                        var _con = $('.modal-courier');
+                        if(!_con.is(e.target) && _con.has(e.target).length == 0){
+                            $('.modal-courier').hide();
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

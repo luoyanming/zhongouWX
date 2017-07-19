@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧丰泓沪港深灵活配置混合型基金首发培训</title>
+        <link rel="stylesheet" href="../static/style/column.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+            
+            <section class="live-detail">
+                <div class="imgbox">
+                    <img src="../static/image/example-03.png">
+                </div>
+
+                <div class="detail">
+                    <div class="base-info">
+                        <div class="title">中欧丰泓沪港深灵活配置混合型基金首发培训</div>
+                        <div class="flex-h info-speaker">
+                            <p class="info-left">讲师</p>
+                            <p class="info-right flex-a-i">曹名长</p>
+                        </div>
+                        <div class="flex-h info-time">
+                            <p class="info-left">时间</p>
+                            <p class="info-right flex-a-i">10.20（周四）15:30-18:30</p>
+                        </div>
+                    </div>
+
+                    <div class="brief-info">
+                        <p class="brief-title">讲师简介</p>
+                        <p class="brief-desc">基金经理曹名长是中欧价值投资策略组事业部负责人</p>
+                    </div>
+
+                    <div class="brief-info">
+                        <p class="brief-title">课程简介</p>
+                        <p class="brief-desc">中欧丰泓沪港深基金将于9月30日-11月4日首发，我司安排重点上线代销。曹总将就深港通业务下港股投资新思路及中欧丰鸿沪港深基金产品情况和操作思路进行交流</p>
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <a href="javascript:void(0);" class="btn-live">收听直播</a>
+                    <a href="javascript:void(0);" class="btn-count-down">20秒后开始</a>
+                    <a href="javascript:void(0);" class="btn-anchor">20秒后正式开始，进入直播准备</a>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="mask-live" style="display: none;"></section>
+        <section class="mask-modal-live" style="display: none;">
+            <h1>直播次数已用完，下次早点儿哦~</h1>
+            <a href="javascript:void(0);" class="btn-close">知道了</a>
+        </section>
+
+        <section class="mask-nopermission" style="display: blcok;"></section>
+        <section class="mask-modal-nopermission" style="display: blcok;">
+            <h1>亲爱的用户，您好</h1>
+            <p>您所查看的页面属于非公开资源，目前无法查看。<br />若您还未绑定，您可以先完成绑定，成为正式用户。<br />您也可以通过联系您的渠道经理确认是否可以获得该权限。</p>
+            <a href="javascript:void(0);" class="btn-close">返回首页</a>
+        </section>
+    
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script>
+            $(function() {
+                $('.live-detail .btn-live').on('click', function() {
+                    $('.mask-live').fadeIn();
+                    $('.mask-modal-live').fadeIn();
+                    $('body').addClass('no-scroll');
+                });
+
+                $('.mask-modal-live .btn-close').on('click', function() {
+                    $('.mask-live').fadeOut();
+                    $('.mask-modal-live').fadeOut();
+                    $('body').removeClass('no-scroll');
+                });
+            });
+        </script>
+    </body>
+</html>

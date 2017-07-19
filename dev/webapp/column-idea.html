@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/column.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+            
+            <section class="column-header">
+                <label class="search">
+                    <p>搜索</p>
+                    <input type="search" id="search">
+                </label>
+
+                <h1 class="idea-title"></h1>
+            </section>
+
+            <section class="column-tabnav flex-h">
+                <div class="tabnav-item active">客户维护助攻</div>
+            </section>
+
+            <section class="column-list">
+                <ul>
+                    <li>
+                        <a href="#" class="flex-h">
+                            <div class="imgbox">
+                                <img src="../static/image/example-01.png">
+                            </div>
+                            <div class="desc flex-a-i">
+                                <div class="title">中欧明睿新起点混合：大类资产配置，宏观趋势分析</div>
+                                <div class="flex-h">
+                                    <p class="flex-a-i">王某某</p>
+                                    <p>2016-09-30</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex-h">
+                            <div class="imgbox">
+                                <img src="../static/image/example-01.png">
+                            </div>
+                            <div class="desc flex-a-i">
+                                <div class="title">中欧明睿新起点混合：大类资产配置，宏观趋势分析</div>
+                                <div class="flex-h">
+                                    <p class="flex-a-i">王某某</p>
+                                    <p>2016-09-30</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex-h">
+                            <div class="imgbox">
+                                <img src="../static/image/example-01.png">
+                            </div>
+                            <div class="desc flex-a-i">
+                                <div class="title">中欧明睿新起点混合：大类资产配置，宏观趋势分析</div>
+                                <div class="flex-h">
+                                    <p class="flex-a-i">王某某</p>
+                                    <p>2016-09-30</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex-h">
+                            <div class="imgbox">
+                                <img src="../static/image/example-01.png">
+                            </div>
+                            <div class="desc flex-a-i">
+                                <div class="title">中欧明睿新起点混合：大类资产配置，宏观趋势分析</div>
+                                <div class="flex-h">
+                                    <p class="flex-a-i">王某某</p>
+                                    <p>2016-09-30</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex-h">
+                            <div class="imgbox">
+                                <img src="../static/image/example-01.png">
+                            </div>
+                            <div class="desc flex-a-i">
+                                <div class="title">中欧明睿新起点混合：大类资产配置，宏观趋势分析</div>
+                                <div class="flex-h">
+                                    <p class="flex-a-i">王某某</p>
+                                    <p>2016-09-30</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="column-footer">
+                <div class="navbar">
+                    <ul class="flex-h">
+                        <li class="flex-a-i">
+                            <a href="#" class="link-home">首页</a>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="javascript:void(0);" class="link-column active">精华栏目</a>
+                            <div class="submenu">
+                                <a href="#" class="link-opinion"></a>
+                                <a href="#" class="link-read"></a>
+                                <a href="#" class="link-idea"></a>
+                            </div>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="#" class="link-my">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // search bind
+                $('#search').bind('focus', function() {
+                    $(this).parent().find('p').hide();
+                }).bind('blur', function() {
+                    var value = $(this).val();
+                    value = value.trim();
+
+                    if(value == '') {
+                        $(this).parent().find('p').show();
+                    } else {
+                        $(this).parent().find('p').hide();
+                    }
+                });
+
+                // 
+                $('.column-footer .navbar a.link-column').on('click', function() {
+                    $(this).parent().find('.submenu').toggleClass('active');
+                });
+
+
+                // column-tabnav 
+                $('.column-tabnav .tabnav-item').on('click', function() {
+                    if($(this).hasClass('active')) {
+                        return false;
+                    }
+                    
+                    $(this).addClass('active').siblings().removeClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

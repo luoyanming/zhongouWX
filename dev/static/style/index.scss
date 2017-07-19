@@ -1,0 +1,148 @@
+@import "base/reset";
+
+.banner{
+	position: relative;
+	height: 0;
+	padding-top: 46.66666%;
+
+	.swiper-container{
+		@include position(absolute, 1, 0, 0, 0, 0);
+
+		.swiper-wrapper{
+			.swiper-slide{
+				a{
+					display: block;
+					width: 100%;
+					height: 100%;
+
+					img{
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.info{
+	position: relative;
+	height: 88/$ppr;
+	padding: 0 30/$ppr 0 87/$ppr;
+	@include backgroundImage('../image/icon_home_notice@2x.png', no-repeat, 30/$ppr, center, 40/$ppr, 40/$ppr);
+	border-bottom: 1px solid $colorCCC;
+	background-color: $colorFFF;
+
+	.swiper-container{
+		width: 100%;
+		height: 88/$ppr;
+
+		.swiper-wrapper{
+			.swiper-slide{
+				a{
+					display: block;
+					width: 100%;
+					height: 88/$ppr;
+					line-height: 88/$ppr;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					font-size: 26/$ppr;
+					color: $color333;
+				}
+			}
+		}
+	}
+}
+
+.entrance{
+	padding: 10/$ppr;
+
+	.flex-h{
+		padding: 10/$ppr 0;
+
+		.flex-a-i{
+			margin: 0 10/$ppr;
+
+			.box{
+				position: relative;
+				height: 0;
+				padding-top: 100%;
+				
+				a{
+					@include position(absolute, 1, 0, none, none, 0);
+					width: 100%;
+					height: 100%;
+					background-color: $colorFFF;
+
+					p{
+						width: 100%;
+						padding-top: 180/$ppr;
+						font-size: 30/$ppr;
+						color: $color333;
+						line-height: 42/$ppr;
+						text-align: center;
+					}
+
+					&.link-opinion{
+						p{
+							@include backgroundImage('../image/icon_short_opinion@2x.png', no-repeat, center, top, 160/$ppr, 160/$ppr);
+						}
+
+						&:hover, &:active{
+							background-color: $colorBlue;
+
+							p{
+								color: $colorFFF;
+								@include backgroundImage('../image/icon_short_opinion_hl@2x.png', no-repeat, center, top, 160/$ppr, 160/$ppr);
+							}
+						}
+					}
+					&.link-read{
+						p{
+							@include backgroundImage('../image/icon_short_read@2x.png', no-repeat, center, top, 160/$ppr, 160/$ppr);
+						}
+
+						&:hover, &:active{
+							background-color: $colorBlue;
+
+							p{
+								color: $colorFFF;
+								@include backgroundImage('../image/icon_short_read_hl@2x.png', no-repeat, center, top, 160/$ppr, 160/$ppr);
+							}
+						}
+					}
+					&.link-idea{
+						p{
+							@include backgroundImage('../image/icon_short_idea@2x.png', no-repeat, center, top, 160/$ppr, 160/$ppr);
+						}
+
+						&:hover, &:active{
+							background-color: $colorBlue;
+
+							p{
+								color: $colorFFF;
+								@include backgroundImage('../image/icon_short_idea_hl@2x.png', no-repeat, center, top, 160/$ppr, 160/$ppr);
+							}
+						}
+					}
+					&.link-my{
+						p{
+							@include backgroundImage('../image/icon_short_my@2x.png', no-repeat, center, top, 160/$ppr, 160/$ppr);
+						}
+
+						&:hover, &:active{
+							background-color: $colorBlue;
+
+							p{
+								color: $colorFFF;
+								@include backgroundImage('../image/icon_short_my_hl@2x.png', no-repeat, center, top, 160/$ppr, 160/$ppr);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

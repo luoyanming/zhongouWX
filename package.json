@@ -1,0 +1,22 @@
+{
+  "name": "luoym",
+  "version": "1.0.0",
+  "description": "zhong'ou wechat.",
+  "homepage": "",
+  "author": {
+    "name": "luoym",
+    "email": "13575458746@163.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-connect": "^5.0.0",
+    "gulp-header": "^1.8.8",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/personal.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+
+            <section class="personal-main has-bottom">
+                <div class="score-detail-list">
+                    <section class="personal-title">
+                        <h1>阅读文章</h1>
+                    </section>
+
+                	<div class="list">
+                		<div class="flex-h title">
+                			<p>时间</p>
+                			<p class="flex-a-i">积分数</p>
+                		</div>
+                		<ul>
+                			<li class="flex-h">
+                				<p>2016-11-30</p>
+                				<p class="flex-a-i">5</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                			<li class="flex-h">
+                				<p>2016-11-31</p>
+                				<p class="flex-a-i">10</p>
+                			</li>
+                		</ul>
+                		<div class="desc">每周只能获得5次积分，每年只能获得280次积分。每篇文章只有第一次阅读可以获得积分。</div>
+                	</div>
+                </div>
+                
+            </section>
+            
+            <section class="column-footer">
+                <div class="navbar">
+                    <ul class="flex-h">
+                        <li class="flex-a-i">
+                            <a href="#" class="link-home">首页</a>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="javascript:void(0);" class="link-column">精华栏目</a>
+                            <div class="submenu">
+                                <a href="#" class="link-opinion"></a>
+                                <a href="#" class="link-read"></a>
+                                <a href="#" class="link-idea"></a>
+                            </div>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="#" class="link-my active">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // 
+                $('.column-footer .navbar a.link-column').on('click', function() {
+                    $(this).parent().find('.submenu').toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

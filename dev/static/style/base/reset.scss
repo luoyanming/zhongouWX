@@ -1,0 +1,187 @@
+@import "mixin-font";
+@import "flex";
+@import "mixin-background";
+@import "mixin-position";
+@import "mixin-transform";
+
+// reset
+// -------------------------------------------------------------------------
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+    		box-sizing: border-box;
+	outline: 0;
+	font-weight: normal;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	border: none;
+	font: inherit;
+	vertical-align: baseline;
+	word-wrap:break-word;
+	font-family: $fontFamily;
+}
+
+ul,
+li,
+ol{
+	list-style: none;
+}
+
+input,
+textarea,
+button{
+	-webkit-appearance:none;
+}
+
+input,
+textarea,
+button{
+	background: transparent;
+	&:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0 1000px #fff inset;
+	}
+	&::-webkit-search-cancel-button {
+		display: none;
+	}
+}
+
+:-moz-placeholder {
+    color: $color999;  
+}
+
+::-moz-placeholder {
+    color: $color999; 
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: $color999;  
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $color999; 
+}
+
+a{
+	text-decoration: none;
+	tap-highlight-color: rgba(0,0,0,0);
+	focus-ring-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-focus-ring-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0,0,0,0);
+	-moz-focus-ring-color: rgba(0, 0, 0, 0);
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+// 
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display: block;
+	height: 0;
+	line-height:0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+// media
+@media only screen and (min-width: 400px) {
+	html {
+	    font-size: 21.33333333px !important;
+	}
+}
+@media only screen and (min-width: 414px) {
+	html {
+	    font-size: 22.08px !important;
+	}
+}
+@media only screen and (min-width: 480px) {
+	html {
+	    font-size: 25.6px !important;
+	}
+}
+
+html{
+	font-size: $baseFontSize;
+	background-color: $colorF3;
+}
+html, body{
+	position: relative;
+	height: 100%;
+}
+
+body{
+	overflow: hidden !important;
+	-webkit-overflow-scrolling: touch;
+}
+
+.bg-white{
+	background-color: $colorFFF !important;
+}
+
+.page{
+	position: relative;
+	width: 100%;
+
+	&.page-normal{
+		position: absolute;
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y:auto !important;
+		// -webkit-overflow-scrolling: touch;
+	}
+
+	&.page-room{
+		position: absolute;
+		height: 100%;
+		overflow: hidden;
+	}
+
+}
+
+.y-scroll{
+	overflow-x: hidden;
+	overflow-y:auto !important;
+	-webkit-overflow-scrolling: touch;
+}
+
+.no-scroll{
+	overflow: hidden !important;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+// 
+.back-history{
+	@include position(absolute, 5, 50%, none, none, 20/$ppr);
+	width: 60/$ppr;
+	height: 60/$ppr;
+	@include backgroundImage('../image/icon_arrow_s@2x.png', no-repeat, center, center, auto, 60%);
+	-webkit-transform: translate3d(0,-50%,0) rotate(180deg);
+	   -moz-transform: translate3d(0,-50%,0) rotate(180deg);
+		-ms-transform: translate3d(0,-50%,0) rotate(180deg);
+		 -o-transform: translate3d(0,-50%,0) rotate(180deg);
+			transform: translate3d(0,-50%,0) rotate(180deg);
+}
+
+// showImage
+.showImage{
+	@include position(fixed, 10000, 0, 0, 0, 0);
+	background-color: #000;
+
+	img{
+		@include position(absolute, 10001, 0, 0, 0, 0);
+	}
+}

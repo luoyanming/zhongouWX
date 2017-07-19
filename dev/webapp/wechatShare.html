@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧丰泓沪港深灵活配置混合型基金首发培训</title>
+        <link rel="stylesheet" href="../static/style/column.css">
+        <link rel="stylesheet" href="../static/style/form.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+            
+            <section class="live-detail">
+                <div class="wechat-bar flex-h">
+                    <div class="flex-a-i">
+                        <a href="#" class="btn-detail">报名详情</a>
+                    </div>
+                    <p>可用<span>5</span>次</p>
+                    <div class="btn-share"></div>
+                </div>
+
+                <div class="imgbox">
+                    <img src="../static/image/example-03.png">
+                </div>
+
+                <div class="detail">
+                    <div class="base-info">
+                        <div class="title">中欧丰泓沪港深灵活配置混合型基金首发培训</div>
+                        <div class="flex-h info-speaker">
+                            <p class="info-left">讲师</p>
+                            <p class="info-right flex-a-i">曹名长</p>
+                        </div>
+                        <div class="flex-h info-time">
+                            <p class="info-left">时间</p>
+                            <p class="info-right flex-a-i">10.20（周四）15:30-18:30</p>
+                        </div>
+                    </div>
+
+                    <div class="brief-info">
+                        <p class="brief-title">讲师简介</p>
+                        <p class="brief-desc">基金经理曹名长是中欧价值投资策略组事业部负责人</p>
+                    </div>
+
+                    <div class="brief-info">
+                        <p class="brief-title">课程简介</p>
+                        <p class="brief-desc">中欧丰泓沪港深基金将于9月30日-11月4日首发，我司安排重点上线代销。曹总将就深港通业务下港股投资新思路及中欧丰鸿沪港深基金产品情况和操作思路进行交流</p>
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <a href="javascript:void(0);" class="btn-live">收听直播</a>
+                    <a href="javascript:void(0);" class="btn-count-down">20秒后开始</a>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="mask-live" style="display: none;"></section>
+        <section class="mask-modal-live" style="display: none;">
+            <h1>直播次数已用完，下次早点儿哦~</h1>
+            <a href="javascript:void(0);" class="btn-close">知道了</a>
+        </section>
+
+        <section class="mask-form" style="display: none;"></section>
+        <section class="mask-modal-form" style="display: none;">
+            <a href="javascript:void(0);" class="btn-close"></a>
+
+            <h1>请填写报名信息</h1>
+
+            <div class="form">
+                <ul>
+                    <li>
+                        <div class="input-item">
+                            <input type="text" placeholder="公司名称" class="input-company">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-item">
+                            <input type="text" placeholder="姓名" class="input-name">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-item">
+                            <input type="tel" placeholder="手机号" class="input-mobile">
+                        </div>
+                    </li>
+                    <li class="flex-h">
+                        <div class="input-item flex-a-i">
+                            <input type="tel" placeholder="验证码" class="input-code">
+                        </div>
+                        <div class="btn-code">获取验证码</div>
+                        <!-- <div class="btn-code">59秒</div> -->
+                    </li>
+                    <li>
+                        <div class="input-item">
+                            <input type="text" placeholder="推荐人姓名" class="input-recommend">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn-box flex-h">
+                <div class="flex-a-i">
+                    <a href="javascript:void(0);" class="btn-cancle">跳过</a>
+                </div>
+                <div class="flex-a-i">
+                    <a href="javascript:void(0);" class="btn-ensure">确定</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mask-share"></section>
+        <section class="mask-modal-share">
+            <div class="numbar flex-h">
+                <div class="btn-box flex-a-i">
+                    <a href="javascript:void(0);" class="btn-minus"></a>
+                </div>
+                <div class="input-box">
+                    <input type="tel" readonly value="1" data-min="1" data-max="5" class="input-num">
+                </div>
+                <div class="btn-box flex-a-i">
+                    <a href="javascript:void(0);" class="btn-plus"></a>
+                </div>
+            </div>
+            <div class="wechat-box">
+                <a href="javascript:void(0);" class="btn-wechat">微信好友</a>
+            </div>
+            <a href="javascript:void(0);" class="btn-cancle">取消</a>
+        </section>
+    
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script>
+            $(function() {
+
+                // 次数用完弹框
+                $('.live-detail .btn-count-down').on('click', function() {
+                    $('.mask-live').fadeIn();
+                    $('.mask-modal-live').fadeIn();
+                    $('body').addClass('no-scroll');
+                });
+
+                $('.mask-modal-live .btn-close').on('click', function() {
+                    $('.mask-live').fadeOut();
+                    $('.mask-modal-live').fadeOut();
+                    $('body').removeClass('no-scroll');
+                });
+
+                // 填写资料弹框
+                $('.live-detail .btn-live').on('click', function() {
+                    $('.mask-form').fadeIn();
+                    $('.mask-modal-form').fadeIn();
+                });
+
+                $('.mask-modal-form .btn-cancle').on('click', function() {
+                    $('.mask-form').fadeOut();
+                    $('.mask-modal-form').fadeOut();
+                });
+
+                $('.mask-modal-form .btn-close').on('click', function() {
+                    $('.mask-form').fadeOut();
+                    $('.mask-modal-form').fadeOut();
+                });
+
+
+
+                // share
+                var maskShare = $('.mask-share'),
+                    maskShareModal = $('.mask-modal-share');
+                $('.wechat-bar .btn-share').on('click', function() {
+                    maskShare.fadeIn(200);
+                    maskShareModal.addClass('active');
+                });
+
+                maskShare.on('click', function() {
+                    maskShare.fadeOut(300);
+                    maskShareModal.removeClass('active');
+                });
+
+                maskShareModal.find('.btn-cancle').on('click', function() {
+                    maskShare.fadeOut(300);
+                    maskShareModal.removeClass('active');
+                });
+
+                var btnMinus = maskShareModal.find('.btn-minus'),
+                    btnPlus = maskShareModal.find('.btn-plus'),
+                    inputNum = maskShareModal.find('.input-num'),
+                    _min = inputNum.attr('data-min'),
+                    _max = inputNum.attr('data-max');
+
+                btnMinus.on('click', function() {
+                    var _num = inputNum.val();
+                    _num = parseInt(_num);
+
+                    if(_num <= _min) {
+                        return false;
+                    }
+
+                    inputNum.val(_num - 1);
+                });
+
+                btnPlus.on('click', function() {
+                    var _num = inputNum.val();
+                    _num = parseInt(_num);
+
+                    if(_num >= _max) {
+                        return false;
+                    }
+
+                    inputNum.val(_num + 1);
+                });
+
+            });
+        </script
+    </body>
+</html>

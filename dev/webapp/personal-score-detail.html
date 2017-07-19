@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/personal.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+
+            <section class="personal-main has-bottom">
+                <div class="personal-score flex-v">
+                    <section class="personal-title">
+                        <h1>积分明细</h1>
+                    </section>
+
+                    <div class="score-info">
+                        <div class="info-base flex-h">
+                            <div class="avatar"><img src="../static/image/pic_user@2x.png"></div>
+                            <div class="name flex-a-i">姓名or手机号</div>
+                            <div class="level">V2会员</div>
+                        </div>
+
+                        <div class="number">571</div>
+                        <div class="tips">当前积分</div>
+
+                        <div class="text">
+                            <p>
+                                <span>达到1000分可以升级为V3会员</span>
+                                <a href="javascript:void(0);" class="btn-score-rule"></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="score-detail flex-a-i">
+                        <div class="score-from">
+                            <div class="title">
+                                <h1>贡献值</h1>
+                            </div>
+                            <ul class="clearfix">
+                                <li>
+                                    <a class="flex-h" href="javascript:void(0);">
+                                        <i class="icon-1"></i>
+                                        <div class="flex-a-i flex-v-c">
+                                            <div class="desc">
+                                                <h2>200<span>积分</span></h2>
+                                                <h3>销量20000元</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="score-from">
+                            <div class="title">
+                                <h1>互动值</h1>
+                            </div>
+                            <ul class="clearfix">
+                                <li>
+                                    <a class="flex-h" href="javascript:void(0);">
+                                        <i class="icon-3"></i>
+                                        <div class="flex-a-i flex-v-c">
+                                            <div class="desc">
+                                                <h2>50<span>积分</span></h2>
+                                                <h3>阅读文章5次</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex-h" href="javascript:void(0);">
+                                        <i class="icon-4"></i>
+                                        <div class="flex-a-i flex-v-c">
+                                            <div class="desc">
+                                                <h2>30<span>积分</span></h2>
+                                                <h3>分享文章3次</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex-h" href="javascript:void(0);">
+                                        <i class="icon-5"></i>
+                                        <div class="flex-a-i flex-v-c">
+                                            <div class="desc">
+                                                <h2>20<span>积分</span></h2>
+                                                <h3>参与线下活动2次</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex-h" href="javascript:void(0);">
+                                        <i class="icon-6"></i>
+                                        <div class="flex-a-i flex-v-c">
+                                            <div class="desc">
+                                                <h2>80<span>积分</span></h2>
+                                                <h3>参与线上活动8次</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="column-footer">
+                <div class="navbar">
+                    <ul class="flex-h">
+                        <li class="flex-a-i">
+                            <a href="#" class="link-home">首页</a>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="javascript:void(0);" class="link-column">精华栏目</a>
+                            <div class="submenu">
+                                <a href="#" class="link-opinion"></a>
+                                <a href="#" class="link-read"></a>
+                                <a href="#" class="link-idea"></a>
+                            </div>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="#" class="link-my active">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // 
+                $('.column-footer .navbar a.link-column').on('click', function() {
+                    $(this).parent().find('.submenu').toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

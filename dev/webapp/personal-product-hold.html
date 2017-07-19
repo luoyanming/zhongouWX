@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/personal.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+
+            <section class="personal-main has-bottom">
+                <div class="personal-product flex-v">
+                    <section class="personal-title">
+                        <h1>关注产品</h1>
+                    </section>
+
+                    <div class="prod-linknav">
+                        <div class="linknav flex-h">
+                            <div class="flex-a-i"><a href="javascript:void(0);">所有产品</a></div>
+                            <div class="flex-a-i"><a href="javascript:void(0);">我的关注</a></div>
+                            <div class="flex-a-i"><a href="javascript:void(0);" class="active">我的持有</a></div>
+                        </div>
+                    </div>
+
+                    <div class="prod-focus-list prod-hold-list flex-a-i">
+                        <ul>
+                            <li>
+                                <div class="list-top flex-h">
+                                    <p class="name type-gu flex-a-i"><a href="javascript:void(0);">中欧时代先锋&nbsp;&nbsp;(166001)</a></p>
+                                    <p class="date">2016-09-30</p>
+                                    <p class="icon active"></p>
+                                </div>
+                                <div class="list-bottom flex-h">
+                                    <div class="flex-a-i">
+                                        <p class="text">今年以来</p>
+                                        <p class="desc red">84.71<span>%</span></p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">日涨跌</p>
+                                        <p class="desc red">2.360%</p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">单位净值</p>
+                                        <p class="desc">2.2368</p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">保有量</p>
+                                        <p class="desc">12345</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-top flex-h">
+                                    <p class="name type-huo flex-a-i"><a href="javascript:void(0);">滚钱宝&nbsp;&nbsp;(001211)</a></p>
+                                    <p class="date">2016-09-30</p>
+                                    <p class="icon active"></p>
+                                </div>
+                                <div class="list-bottom flex-h">
+                                    <div class="flex-a-i">
+                                        <p class="text">七日年化</p>
+                                        <p class="desc red">6.425<span>%</span></p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">万份收益</p>
+                                        <p class="desc red">0.966</p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">今年以来收益</p>
+                                        <p class="desc">1.42%</p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">保有量</p>
+                                        <p class="desc">12345</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-top flex-h">
+                                    <p class="name type-hun flex-a-i"><a href="javascript:void(0);">中欧新趋势&nbsp;&nbsp;(001938)</a></p>
+                                    <p class="date">2016-09-30</p>
+                                    <p class="icon active"></p>
+                                </div>
+                                <div class="list-bottom flex-h">
+                                    <div class="flex-a-i">
+                                        <p class="text">今年以来</p>
+                                        <p class="desc red">84.30<span>%</span></p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">日涨跌</p>
+                                        <p class="desc green">1.210%</p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">单位净值</p>
+                                        <p class="desc">1.961</p>
+                                    </div>
+                                    <div class="flex-a-i">
+                                        <p class="text">保有量</p>
+                                        <p class="desc">12345</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="column-footer">
+                <div class="navbar">
+                    <ul class="flex-h">
+                        <li class="flex-a-i">
+                            <a href="#" class="link-home">首页</a>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="javascript:void(0);" class="link-column">精华栏目</a>
+                            <div class="submenu">
+                                <a href="#" class="link-opinion"></a>
+                                <a href="#" class="link-read"></a>
+                                <a href="#" class="link-idea"></a>
+                            </div>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="#" class="link-my active">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // 
+                $('.column-footer .navbar a.link-column').on('click', function() {
+                    $(this).parent().find('.submenu').toggleClass('active');
+                });
+
+                // 
+                $('.prod-focus-list ul li .list-top .icon').on('click', function() {
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

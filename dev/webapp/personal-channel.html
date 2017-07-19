@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/personal.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+
+            <section class="personal-main has-bottom">
+                <div class="personal-channel flex-v">
+                    <section class="personal-title">
+                        <h1>我的渠道</h1>
+                        <a href="javascript:void(0);" class="btn-link">销量明细</a>
+                    </section>
+
+                    <div class="channel-info flex-h">
+                        <div class="flex-a-i">
+                            <h1>888,888,888.00元</h1>
+                            <h2>保有量（元）</h2>
+                        </div>
+                    </div>
+                    <div class="refresh-lastest">最近更新：2016-10-20</div>
+
+                    <div class="channel-list flex-a-i">
+                        <ul>
+                            <li>
+                                <div class="title flex-h">
+                                    <p class="flex-a-i">上海</p>
+                                    <p>华东区</p>
+                                </div>
+                                <div class="desc">
+                                    <p>网点<span>600006</span></p>
+                                    <p>总行<span>招商银行</span></p>
+                                    <p>电话<span>021-80808080</span></p>
+                                    <p>地址<span>**市**区**路**号</span></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title flex-h">
+                                    <p class="flex-a-i">上海</p>
+                                    <p>华东区</p>
+                                </div>
+                                <div class="desc">
+                                    <p>网点<span>600006</span></p>
+                                    <p>总行<span>招商银行</span></p>
+                                    <p>电话<span>021-80808080</span></p>
+                                    <p>地址<span>**市**区**路**号</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="column-footer">
+                <div class="navbar">
+                    <ul class="flex-h">
+                        <li class="flex-a-i">
+                            <a href="#" class="link-home">首页</a>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="javascript:void(0);" class="link-column">精华栏目</a>
+                            <div class="submenu">
+                                <a href="#" class="link-opinion"></a>
+                                <a href="#" class="link-read"></a>
+                                <a href="#" class="link-idea"></a>
+                            </div>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="#" class="link-my active">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // 
+                $('.column-footer .navbar a.link-column').on('click', function() {
+                    $(this).parent().find('.submenu').toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

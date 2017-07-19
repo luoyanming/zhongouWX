@@ -1,0 +1,16 @@
+@mixin backgroundImage($url, $repeat, $posx, $posy, $sizex, $sizey){
+	background-image: url($url);
+	background-repeat: $repeat;
+	background-position: $posx $posy;
+	background-size: $sizex $sizey;
+}
+
+
+@mixin imageGrey($g){
+	-webkit-filter: grayscale($g);
+	   -moz-filter: grayscale($g);
+	    -ms-filter: grayscale($g);
+	     -o-filter: grayscale($g);
+			filter: grayscale($g);
+			filter: gray;
+}

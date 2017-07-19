@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/personal.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+
+            <section class="personal-main has-bottom">
+                <div class="personal-product flex-v">
+                    <section class="personal-title">
+                        <h1>关注产品</h1>
+                    </section>
+
+                    <div class="prod-linknav">
+                        <div class="linknav flex-h">
+                            <div class="flex-a-i"><a href="javascript:void(0);" class="active">所有产品</a></div>
+                            <div class="flex-a-i"><a href="javascript:void(0);">我的关注</a></div>
+                            <div class="flex-a-i"><a href="javascript:void(0);">我的持有</a></div>
+                        </div>
+                    </div>
+
+                    <div class="prod-tabnav">
+                        <div class="tabnav flex-h">
+                            <div class="tabnav-item flex-a-i active">全部</div>
+                            <div class="tabnav-item flex-a-i">混合型</div>
+                            <div class="tabnav-item flex-a-i">股票型</div>
+                            <div class="tabnav-item flex-a-i">债券型</div>
+                            <div class="tabnav-item flex-a-i">货币型</div>
+                            <div class="btn-search flex-a-i"></div>
+                        </div>
+                        <div class="serch-box">
+                            <input type="search" placeholder="搜索产品" class="input-search">
+                        </div>
+                    </div>
+
+                    <div class="prod-all-list flex-a-i">
+                        <div class="refresh-date">最近更新：2016-10-20</div>
+
+                        <div class="table-box">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr class="list-title">
+                                    <th class="icon"></th>
+                                    <th class="name">基金名称</th>
+                                    <th class="value">单位净值</th>
+                                    <th class="gains"><p>日涨幅<i class="arrow"></i></p></th>
+                                </tr>
+                                <tr class="list-item">
+                                    <td class="icon"><i></i></td>
+                                    <td class="name"><a href="javascript:void(0);">中欧新蓝筹E</a></td>
+                                    <td class="value">2.2368</td>
+                                    <td class="gains red">0.29%</td>
+                                </tr>
+                                <tr class="list-item">
+                                    <td class="icon"><i></i></td>
+                                    <td class="name"><a href="javascript:void(0);">中欧天添18个月A</a></td>
+                                    <td class="value">2.2368</td>
+                                    <td class="gains green">-0.29%</td>
+                                </tr>
+                                <tr class="list-item">
+                                    <td class="icon"><i></i></td>
+                                    <td class="name"><a href="javascript:void(0);">中欧新蓝筹E</a></td>
+                                    <td class="value">2.2368</td>
+                                    <td class="gains red">0.29%</td>
+                                </tr>
+                                <tr class="list-item">
+                                    <td class="icon"><i></i></td>
+                                    <td class="name"><a href="javascript:void(0);">中欧新蓝筹E</a></td>
+                                    <td class="value">2.2368</td>
+                                    <td class="gains red">0.29%</td>
+                                </tr>
+                                <tr class="list-item">
+                                    <td class="icon"><i></i></td>
+                                    <td class="name"><a href="javascript:void(0);">中欧天添18个月A</a></td>
+                                    <td class="value">2.2368</td>
+                                    <td class="gains green">-0.29%</td>
+                                </tr>
+                                <tr class="list-item">
+                                    <td class="icon"><i></i></td>
+                                    <td class="name"><a href="javascript:void(0);">中欧新蓝筹E</a></td>
+                                    <td class="value">2.2368</td>
+                                    <td class="gains red">0.29%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="column-footer">
+                <div class="navbar">
+                    <ul class="flex-h">
+                        <li class="flex-a-i">
+                            <a href="#" class="link-home">首页</a>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="javascript:void(0);" class="link-column">精华栏目</a>
+                            <div class="submenu">
+                                <a href="#" class="link-opinion"></a>
+                                <a href="#" class="link-read"></a>
+                                <a href="#" class="link-idea"></a>
+                            </div>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="#" class="link-my active">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // 
+                $('.column-footer .navbar a.link-column').on('click', function() {
+                    $(this).parent().find('.submenu').toggleClass('active');
+                });
+
+
+                // 
+                $('.prod-tabnav .tabnav .tabnav-item').on('click', function() {
+                    var _this = $(this);
+
+                    if(_this.hasClass('active')) {
+                        return false;
+                    } else {
+                        _this.addClass('active').siblings().removeClass('active');
+                    }
+                });
+
+                // 
+                $('.prod-tabnav .tabnav .btn-search').on('click', function() {
+                    var _this = $(this);
+
+                    $('.prod-tabnav .serch-box').slideToggle(300);
+                });
+
+                // 日涨幅
+                $('.prod-all-list .list-title .gains p').on('click', function() {
+                    $(this).find('.arrow').toggleClass('active');
+                });
+
+                // 收藏
+                $('.prod-all-list .list-item .icon i').on('click', function() {
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

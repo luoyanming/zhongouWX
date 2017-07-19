@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/personal.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+
+            <section class="personal-main has-bottom">
+                <div class="add-info">
+                    <section class="personal-title">
+                        <h1>完善资料</h1>
+                    </section>
+
+                    <div class="form">
+                        <div class="form-item">
+                            <div class="input-box">
+                                <input type="text" placeholder="姓名" class="input-mobile" value="姓名x">
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="input-box">
+                                <input type="tel" placeholder="手机号" class="input-mobile" value="13011112222">
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="input-box input-select">
+                                <input type="text" placeholder="所在区域" class="input-region" readonly>
+                            </div>
+
+                            <div class="select-box">
+                                <select class="select-region">
+                                    <option value="-1">请选择所在区域</option>
+                                    <option value="1">一区</option>
+                                    <option value="2">二区</option>
+                                    <option value="3">三区黑铁</option>
+                                    <option value="4">四区</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="input-box input-select">
+                                <input type="text" placeholder="街道" class="input-street" readonly>
+                            </div>
+
+                            <div class="select-box">
+                                <select class="select-region">
+                                    <option value="-1">请选择所在街道</option>
+                                    <option value="11">101街</option>
+                                    <option value="12">102街</option>
+                                    <option value="13">103街</option>
+                                    <option value="14">104街</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="input-box">
+                                <input type="text" placeholder="详细地址" class="input-addr">
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="input-box">
+                                <input type="tel" placeholder="邮编" class="input-zipCode">
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="input-box">
+                                <input type="text" placeholder="单位名称" class="input-company">
+                            </div>
+                        </div>
+
+
+
+                        <div class="btn-box">
+                            <a href="javascript:void(0);" class="btn-submit">保存</a>
+                            <a href="javascript:void(0);" class="btn-submit btn-clickable">保存</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="column-footer">
+                <div class="navbar">
+                    <ul class="flex-h">
+                        <li class="flex-a-i">
+                            <a href="#" class="link-home">首页</a>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="javascript:void(0);" class="link-column">精华栏目</a>
+                            <div class="submenu">
+                                <a href="#" class="link-opinion"></a>
+                                <a href="#" class="link-read"></a>
+                                <a href="#" class="link-idea"></a>
+                            </div>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="#" class="link-my active">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // 
+                $('.column-footer .navbar a.link-column').on('click', function() {
+                    $(this).parent().find('.submenu').toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

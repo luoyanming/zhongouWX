@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/index.css">
+        <link rel="stylesheet" href="../static/script/swiper/swiper-3.4.0.min.css">
+    </head>
+
+    <body>
+
+        <div class="page">
+            
+            <section class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="../static/image/banner.jpg" alt="1"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="../static/image/banner.jpg" alt="2"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="../static/image/banner.jpg" alt="3"></a></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#">显示最新的路演信息、重要资讯等</a></div>
+                        <div class="swiper-slide"><a href="#">显示最新的路演信息、重要资讯等（跑马灯）</a></div>
+                        <div class="swiper-slide"><a href="#">显示最新的路演信息、重要资讯等显示最新的路演信息、重要资讯等</a></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="entrance">
+                <div class="flex-h">
+                    <div class="flex-a-i">
+                        <div class="box">
+                            <a href="#" class="link-opinion flex-v-c">
+                                <p>洞察我见</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-a-i">
+                        <div class="box">
+                            <a href="#" class="link-read flex-v-c">
+                                <p>阅读俱乐部</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-h">
+                    <div class="flex-a-i">
+                        <div class="box">
+                            <a href="#" class="link-idea flex-v-c">
+                                <p>锦囊妙计</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-a-i">
+                        <div class="box">
+                            <a href="#" class="link-my flex-v-c">
+                                <p>个人中心</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script src='../static/script/swiper/swiper-3.4.0.jquery.min.js'></script>
+        <script> 
+            $(function() {
+                var bannerSwiper = new Swiper('.banner .swiper-container', {
+                    autoplay: 4000,
+                    loop : true
+                });
+
+                var infoSwiper = new Swiper('.info .swiper-container', {
+                    autoplay: 2500,
+                    loop : true,
+                    direction : 'vertical'
+                });
+            });
+        </script>
+    </body>
+</html>

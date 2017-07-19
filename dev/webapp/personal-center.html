@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>中欧营销服务平台</title>
+        <link rel="stylesheet" href="../static/style/personal.css">
+    </head>
+
+    <body>
+
+        <div class="page page-normal">
+
+            <section class="personal-main has-bottom">
+                <div class="personal-center">
+                    
+                    <div class="base-info">
+                        <a href="javascript:void(0);" class="btn-info">完善资料</a>
+                        <div class="imgbox"><img src="../static/image/pic_user@2x.png"></div>
+                        <h1>姓名or手机号</h1>
+                        <div class="text">
+                            <p class="name">
+                                <span>客户经理：李四</span>
+                                <a href="tel:110" class="btn-tel"></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="list-block">
+                        <div class="block-item">
+                            <a href="javascript:void(0);" class="flex-h">
+                                <div class="icon icon-1"></div>
+                                <div class="title">我的积分</div>
+                                <div class="text flex-a-i">571分</div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                        <div class="block-item">
+                            <a href="javascript:void(0);" class="flex-h">
+                                <div class="icon icon-2"></div>
+                                <div class="title">我的红包</div>
+                                <div class="text flex-a-i">700元</div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-block">
+                        <div class="block-item">
+                            <a href="javascript:void(0);" class="flex-h">
+                                <div class="icon icon-3"></div>
+                                <div class="title">我的渠道</div>
+                                <div class="text flex-a-i">保有量888,888,888.88元</div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-block">
+                        <div class="block-item">
+                            <a href="javascript:void(0);" class="flex-h">
+                                <div class="icon icon-4"></div>
+                                <div class="title">我的成就</div>
+                                <div class="text flex-a-i"></div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                        <div class="block-item">
+                            <div class="achieve-list">
+                                <ul class="clearfix">
+                                    <li>
+                                        <p class="number">20<span>次</span></p>
+                                        <p class="text">登录服务号</p>
+                                    </li>
+                                    <li>
+                                        <p class="number">5<span>次</span></p>
+                                        <p class="text">阅读文章</p>
+                                    </li>
+                                    <li>
+                                        <p class="number">3<span>次</span></p>
+                                        <p class="text">分享文章</p>
+                                    </li>
+                                    <li>
+                                        <p class="number">7<span>次</span></p>
+                                        <p class="text">线上活动参与</p>
+                                    </li>
+                                    <li>
+                                        <p class="number">12<span>次</span></p>
+                                        <p class="text">线下活动参与</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-block">
+                        <div class="block-item">
+                            <a href="javascript:void(0);" class="flex-h">
+                                <div class="icon icon-5"></div>
+                                <div class="title">关注产品</div>
+                                <div class="text flex-a-i"></div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section class="column-footer">
+                <div class="navbar">
+                    <ul class="flex-h">
+                        <li class="flex-a-i">
+                            <a href="#" class="link-home">首页</a>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="javascript:void(0);" class="link-column">精华栏目</a>
+                            <div class="submenu">
+                                <a href="#" class="link-opinion"></a>
+                                <a href="#" class="link-read"></a>
+                                <a href="#" class="link-idea"></a>
+                            </div>
+                        </li>
+                        <li class="flex-a-i">
+                            <a href="#" class="link-my active">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <script src='../static/script/lib/jquery.2.0.0.min.js'></script>
+        <script> 
+            $(function() {
+                // 
+                $('.column-footer .navbar a.link-column').on('click', function() {
+                    $(this).parent().find('.submenu').toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

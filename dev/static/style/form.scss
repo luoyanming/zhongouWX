@@ -1,0 +1,106 @@
+@import "base/reset";
+
+
+// mask-form ===========================================
+// ============
+.mask-form{
+	@include position(fixed, 100, 0, 0, 0, 0);
+	background-color: rgba(0,0,0,.5);
+}
+
+// form ===================
+// ========================
+.form{
+	ul{
+		padding: 0 50/$ppr;
+
+		li{
+			border-bottom: 1px solid $colorCCC;
+
+			.input-item{
+				input{
+					width: 100%;
+					height: 108/$ppr;
+					padding: 30/$ppr 30/$ppr;
+					font-size: 30/$ppr;
+					color: $color333;
+					line-height: 48/$ppr;
+				}
+			}
+			.btn-code{
+				position: relative;
+				height: 108/$ppr;
+				width: 180/$ppr;
+				font-size: 26/$ppr;
+				line-height: 108/$ppr;
+				color: $color666;
+				text-align: center;
+
+				&:before{
+					content: "";
+					@include position(absolute, 3, 32/$ppr, none, none, 0);
+					width: 1px;
+					height: 44/$ppr;
+					background-color: $colorCCC;
+				}
+			}
+		}
+	}
+}
+
+
+// mask-modal-form ==============================================
+// ======================
+.mask-modal-form{
+	@include position(fixed, 101, 50%, 50/$ppr, none, 50/$ppr);
+	background-color: $colorFFF;
+	border-radius: 8/$ppr;
+	@include translate(0, -50%, 0);
+
+	.btn-close{
+		@include position(absolute, 102, 20/$ppr, 20/$ppr, none, none);
+		width: 44/$ppr;
+		height: 44/$ppr;
+		@include backgroundImage('../image/icon_popup_close@2x.png', no-repeat, center, center, 100%, 100%);
+	}
+
+	h1{
+		margin: 60/$ppr 0 40/$ppr 0;
+		font-size: 34/$ppr;
+		color: $color333;
+		line-height: 48/$ppr;
+		text-align: center;
+	}
+
+	.btn-box{
+		margin-top: 40/$ppr;
+		height: 100/$ppr;
+		border-top: 1px solid $colorCCC;
+
+		.flex-a-i{
+			a{
+				position: relative;
+				display: block;
+				font-size: 34/$ppr;
+				line-height: 100/$ppr;
+				text-align: center;
+
+				&.btn-cancle{
+					color: $color666;
+				}
+				&.btn-ensure{
+					color: $colorBlue;
+
+					&:before{
+						content: "";
+						@include position(absolute, 2, 26/$ppr, none, none, 0);
+						width: 1px;
+						height: 48/$ppr;
+						background-color: $colorCCC;
+					}
+				}
+			}
+		}
+	}
+}
+
